@@ -16,10 +16,33 @@
 </head>
 <body>
 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="">
+            <img id="logo" src="{% static 'img/logo.png' %}">
+        </a>
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+            class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="">Store <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <div class="form-inline my-2 my-lg-0">
+                <a href="" class="btn btn-warning">Login</a>
+                <a href="" class="btn btn-warning">Cart</a>
+                <p id="cart-total">0</p>
+            </div>
+        </div>
+    </nav>
+
     {% block content %}
 
     {% endblock content %}
-    
+
 
     <!-- Bootstrapcdn JavaScript link  -->
     <script crossorigin="anonymous"
@@ -33,6 +56,5 @@
     <script crossorigin="anonymous"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
 </body>
 </html> 
