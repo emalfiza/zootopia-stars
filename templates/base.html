@@ -16,28 +16,35 @@
 </head>
 <body>
 
+    <!-- Start Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="">
-            <img id="logo" src="{% static 'img/logo.png' %}">
-        </a>
         <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
             class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
         <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+             <ul class="navbar-nav nav-fill w-100 d-flex">
                 <li class="nav-item active">
-                    <a class="nav-link" href="">Store <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="">Home</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Store</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="">Login</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="">
+                        <img id="cart-icon" src="{% static 'img/cart.png' %}">
+                    </a>
+                    <p id="cart-total">0</p>
+                </li>
+                
             </ul>
-            <div class="form-inline my-2 my-lg-0">
-                <a href="" class="btn btn-warning">Login</a>
-                <a href="" class="btn btn-warning">Cart</a>
-                <p id="cart-total">0</p>
-            </div>
         </div>
     </nav>
+    <!-- End Navbar -->
 
     {% block content %}
 

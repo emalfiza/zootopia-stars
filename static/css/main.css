@@ -1,3 +1,24 @@
-#logo {
-	width:180px;
+/* Start of the navbar components */
+#cart-total{
+	display: inline-block;
+	text-align: center;
+	color:#fff;
+	background-color: red;
+	width: 20px;
+	height: 25px;
+	border-radius: 50%;
+	font-size: 14px;
+    margin-left: -14px;
 }
+
+#cart-icon{
+	width: 32px;
+	display: inline-block;
+	margin-left: 15px;
+}
+
+.nav-link {
+    display: inline-block;
+    padding: .5rem 1rem;
+}
+/* End of Navbar components */
