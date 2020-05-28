@@ -36,11 +36,16 @@
 
 /******************** Carousel slide show *********************/
 .carousel-item {
-    height: 72vh;
+    height: 70vh;
     min-height: 300px;
     background: no-repeat center center scroll;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+}
+
+/******************** About section of the home page *********************/
+.text-center {
+	padding-top: 42px;
 }
