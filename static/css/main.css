@@ -1,3 +1,15 @@
+/* Top container above the navbar */
+.advert {
+    height: 150px;
+    padding: 18px;
+}
+
+.logo {
+    height: 100px;
+    width: 300px;
+}
+
+
 /* Start of the navbar components */
 #cart-total{
 	display: inline-block;
