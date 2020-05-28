@@ -49,3 +49,20 @@
 .text-center {
 	padding-top: 42px;
 }
+
+/******************** Footer *********************************************/
+.footer-container {
+    background-color: #dfdcd5;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 1em;
+    border-top: solid;
+    border-color: #000027; 
+}
+
+.footer-footer-text {
+    font-size: 0.8em;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
