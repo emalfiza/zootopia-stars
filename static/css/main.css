@@ -105,3 +105,11 @@
     height: 42px; 
     margin-bottom: 5px;
 }
+
+.store-item {
+    padding: 32px;
+}
+
+.store-product {
+    border-radius: 0 0 4px 4px;
+}
