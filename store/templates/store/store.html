@@ -1,1 +1,51 @@
-<h1>It looks like it works!</h1>
+{% extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+
+<!-- Store items listing page -->
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12 text-center">
+			<h1>Zootopia Store</h1>
+		</div>
+	</div>
+</div>
+
+<!--Filters-->
+<div class="container">
+	<div class="row">
+		<div class="col-12 col-sm-6 col-md-4">
+			<form action="">
+				<button class="btn filter-btn" aria-label="" type="submit">Hobs</button>
+			</form>
+		</div>
+		<div class="col-12 col-sm-6 col-md-4">
+			<form action="">
+				<button class="btn filter-btn" aria-label="" type="submit">Judy</button>
+			</form>
+		</div>
+		<div class="col-12 col-sm-6 col-md-4">
+			<form action="">
+				<button class="btn filter-btn" aria-label="" type="submit">Wilde</button>
+			</form>
+		</div>
+		<div class="col-12 col-sm-6 col-md-4">
+			<form action="">
+				<button class="btn filter-btn" aria-label="" type="submit">Flash</button>
+			</form>
+		</div>
+		<div class="col-12 col-sm-6 col-md-4">
+			<form action="">
+				<button class="btn filter-btn" aria-label="" type="submit">something else</button>
+			</form>
+		</div>
+		<div class="col-12 col-sm-6 col-md-4">
+			<form action="">
+				<button class="btn filter-btn" aria-label="" type="submit">Blah blah</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

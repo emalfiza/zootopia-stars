@@ -94,3 +94,14 @@
 .best-sellers {
     padding: 32px;
 }
+
+/* store page components */
+.filter-btn {
+    background-color: olive;
+    color: white;
+    border: solid #000 2px;
+    width: 100%;
+    transition: all 0.3s;
+    height: 42px; 
+    margin-bottom: 5px;
+}
