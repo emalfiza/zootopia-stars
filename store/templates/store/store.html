@@ -50,73 +50,20 @@
 
 <!-- All the items from the database list -->
 <div class="container-fluid store-item">
-		<div class="row">
-			<div class="col-lg-4 col-md-4 col-sm-6 box">
-				<img class="thumbnail" src="{% static 'img/placeholder.png' %}">
-				<div class="box-element store-product">
-					<h6><strong>{{ products }}</strong></h6>
-					<hr>
-					<button  class="btn btn-outline-secondary add-btn">Add to Cart</button>
-					<a class="btn btn-outline-success" href="#">View</a>
-					<h4 style="display: inline-block; float: right"><strong>€20</strong></h4>
-				</div>
-			</div>
-	
-			<div class="col-lg-4 col-md-4 col-sm-6 box">
-				<img class="thumbnail" src="{% static 'img/placeholder.png' %}">
-				<div class="box-element store-product">
-					<h6><strong>{{ products }}</strong></h6>
-					<hr>
-					<button  class="btn btn-outline-secondary add-btn">Add to Cart</button>
-					<a class="btn btn-outline-success" href="#">View</a>
-					<h4 style="display: inline-block; float: right"><strong>€20</strong></h4>
-				</div>
-			</div>
-
-			<div class="col-lg-4 col-md-4 col-sm-6 box">
-				<img class="thumbnail" src="{% static 'img/placeholder.png' %}">
-				<div class="box-element store-product">
-					<h6><strong>{{ products }}</strong></h6>
-					<hr>
-					<button  class="btn btn-outline-secondary add-btn">Add to Cart</button>
-					<a class="btn btn-outline-success" href="#">View</a>
-					<h4 style="display: inline-block; float: right"><strong>€20</strong></h4>
-				</div>
-			</div>
-
-            <div class="col-lg-4 col-md-4 col-sm-6 box">
-				<img class="thumbnail" src="{% static 'img/placeholder.png' %}">
-				<div class="box-element store-product">
-					<h6><strong>{{ products }}</strong></h6>
-					<hr>
-					<button  class="btn btn-outline-secondary add-btn">Add to Cart</button>
-					<a class="btn btn-outline-success" href="#">View</a>
-					<h4 style="display: inline-block; float: right"><strong>€20</strong></h4>
-				</div>
-			</div>
-
-            <div class="col-lg-4 col-md-4 col-sm-6 box">
-				<img class="thumbnail" src="{% static 'img/placeholder.png' %}">
-				<div class="box-element store-product">
-					<h6><strong>{{ products }}</strong></h6>
-					<hr>
-					<button  class="btn btn-outline-secondary add-btn">Add to Cart</button>
-					<a class="btn btn-outline-success" href="#">View</a>
-					<h4 style="display: inline-block; float: right"><strong>€20</strong></h4>
-				</div>
-			</div>
-
-            <div class="col-lg-4 col-md-4 col-sm-6 box">
-				<img class="thumbnail" src="{% static 'img/placeholder.png' %}">
-				<div class="box-element store-product">
-					<h6><strong>{{ products }}</strong></h6>
-					<hr>
-					<button  class="btn btn-outline-secondary add-btn">Add to Cart</button>
-					<a class="btn btn-outline-success" href="#">View</a>
-					<h4 style="display: inline-block; float: right"><strong>€20</strong></h4>
-				</div>
+	<div class="row">
+    {% for product in products %}
+		<div class="col-lg-4 col-md-4 col-sm-6 box">
+			<img class="thumbnail" src="{% static 'img/placeholder.png' %}">
+			<div class="box-element store-product">
+				<h6><strong>{{ product.product_name }}</strong></h6>
+				<hr>
+				<button  class="btn btn-outline-secondary add-btn">Add to Cart</button>
+				<a class="btn btn-outline-success" href="#">View</a>
+				<h4 style="display: inline-block; float: right"><strong>€{{ product.product_price }}</strong></h4>
 			</div>
 		</div>
-    </div>
+    {% endfor %}
+	</div>
+</div>
 
 {% endblock %}
