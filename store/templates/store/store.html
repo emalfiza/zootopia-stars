@@ -21,28 +21,28 @@
 			</form>
 		</div>
 		<div class="col-12 col-sm-6 col-md-4">
-			<form action="">
-				<button class="btn filter-btn" aria-label="" type="submit">Judy</button>
+			<form action="{% url 'products_by_category' 'Mask' %}">
+				<button class="btn filter-btn {% if '/products/category/Mask' == request.path %} filter-active {% endif %}" aria-label="Filter Mask" type="submit">Mask</button>
 			</form>
 		</div>
 		<div class="col-12 col-sm-6 col-md-4">
-			<form action="">
-				<button class="btn filter-btn" aria-label="" type="submit">Wilde</button>
+			<form action="{% url 'products_by_category' 'Print' %}">
+				<button class="btn filter-btn {% if '/products/category/Print' == request.path %} filter-active {% endif %}" aria-label="Filter Print" type="submit">Print</button>
 			</form>
 		</div>
 		<div class="col-12 col-sm-6 col-md-4">
-			<form action="">
-				<button class="btn filter-btn" aria-label="" type="submit">Flash</button>
+			<form action="{% url 'products_by_category' 'Toys' %}">
+				<button class="btn filter-btn {% if '/products/category/Toys' == request.path %} filter-active {% endif %}" aria-label="Filter Toys" type="submit">Toys</button>
 			</form>
 		</div>
 		<div class="col-12 col-sm-6 col-md-4">
-			<form action="">
-				<button class="btn filter-btn" aria-label="" type="submit">something else</button>
+			<form action="{% url 'products_by_category' 'Gifts' %}">
+				<button class="btn filter-btn {% if '/products/category/Gifts' == request.path %} filter-active {% endif %}" aria-label="Filter Gifts" type="submit">Gifts</button>
 			</form>
 		</div>
 		<div class="col-12 col-sm-6 col-md-4">
-			<form action="">
-				<button class="btn filter-btn" aria-label="" type="submit">Blah blah</button>
+			<form action="{% url 'products_by_category' 'Misc' %}">
+				<button class="btn filter-btn {% if '/products/category/Misc' == request.path %} filter-active {% endif %}" aria-label="Filter Misc" type="submit">Misc</button>
 			</form>
 		</div>
 	</div>
