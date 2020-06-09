@@ -16,8 +16,8 @@
 <div class="container">
 	<div class="row">
 		<div class="col-12 col-sm-6 col-md-4">
-			<form action="">
-				<button class="btn filter-btn" aria-label="" type="submit">Hobs</button>
+			<form action="{% url 'products_by_category' 'Clothes' %}">
+				<button class="btn filter-btn {% if '/products/category/Clothes' == request.path %} filter-active {% endif %}" aria-label="Filter Clothes" type="submit">Clothes</button>
 			</form>
 		</div>
 		<div class="col-12 col-sm-6 col-md-4">
