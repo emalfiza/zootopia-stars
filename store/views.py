@@ -1,7 +1,13 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Product
 
 # Create your views here.
+
+def products_by_category_view(request, category):
+    """ Filters for product categories """
+    products = Product.objects.filter(
+        product_category_id__category_name=category)
+    return render(request, "store/store.html", {"products": products})
 
 
 def store(request):
@@ -16,8 +22,12 @@ def store(request):
     return render(request, 'store/store.html', context)
 
 
-def products_by_category_view(request, category):
-    """Filters for product categories"""
-    products = Product.objects.filter(
-        product_category_id__category_name=category)
-    return render(request, "store/store.html", {"products": products})
+def product_detail(request, product_id):
+    """ A view to show individual product details """
+
+    product = get_object_or_404(Product, pk=product_id)
+
+    context = {
+        'product': product,
+    }
+    return render(request, 'store/product_detail.html', context)
