@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     # my custom apps
     'store',
     'cart',
-    'checkout',
+    'order',
 ]
 
 MIDDLEWARE = [

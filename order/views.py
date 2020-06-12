@@ -3,7 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 
 
-def checkout(request):
+def order(request):
     context = {
     }
-    return render(request, 'checkout/checkout.html', context)
+    return render(request, 'order/order.html', context)
